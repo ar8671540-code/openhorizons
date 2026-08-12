@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenHorizons Travel — Curated Journeys Across India</title>
+<meta name="description" content="OpenHorizons plans golden triangle tours, Himalayan getaways, Kashmir holidays and beach escapes to Goa — with expert guides, custom itineraries and 24/7 support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>.hero{display:none}#destinations{padding-top:90px}.navbar{position:absolute;background:var(--navy)}.reveal{opacity:1;transform:none}</style>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <circle cx="20" cy="16" r="9" fill="var(--amber)"/>
+          <path d="M2 26 Q20 14 38 26" stroke="var(--paper)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">Open<em>Horizons</em></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#packages">Tour Packages</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#book" class="btn btn-amber nav-cta">Book Now</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-media">
+    <img src="assets/openhorizons-hero.png" alt="Two travelers overlooking a Himalayan lake at sunrise" loading="eager" fetchpriority="high">
+    <div class="hero-scrim"></div>
+  </div>
+
+  <div class="hero-content">
+    <span class="eyebrow"><i class="fa-solid fa-compass" aria-hidden="true"></i> Journeys across India</span>
+    <h1>See India,<br>your way.</h1>
+    <p class="hero-sub">Thoughtful private trips, exceptional local stays and on-the-ground support from the first idea to the flight home.</p>
+    <div class="hero-ctas">
+      <a href="#packages" class="btn btn-amber">Explore journeys <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#contact" class="btn btn-outline">Plan a custom trip</a>
+    </div>
+    <div class="hero-proof" aria-label="Customer rating and support details">
+      <span><strong>4.9/5</strong> traveler rating</span>
+      <span><strong>50k+</strong> trips planned</span>
+      <span><strong>24/7</strong> trip support</span>
+    </div>
+  </div>
+
+  <div class="horizon-line" aria-hidden="true"></div>
+
+  <!-- Search / Booking box -->
+  <form class="search-box" id="searchBox">
+    <div class="field">
+      <label for="destination"><i class="fa-solid fa-location-dot"></i> Destination</label>
+      <select id="destination" name="destination">
+        <option>Agra</option>
+        <option>Jaipur</option>
+        <option>Delhi</option>
+        <option>Goa</option>
+        <option>Manali</option>
+        <option>Kashmir</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="travelDate"><i class="fa-solid fa-calendar-days"></i> Travel Date</label>
+      <input type="date" id="travelDate" name="travelDate">
+    </div>
+    <div class="field">
+      <label for="travelers"><i class="fa-solid fa-user-group"></i> Travelers</label>
+      <select id="travelers" name="travelers">
+        <option>1 Traveler</option>
+        <option>2 Travelers</option>
+        <option>3-5 Travelers</option>
+        <option>6+ Travelers</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="tourType"><i class="fa-solid fa-route"></i> Tour Type</label>
+      <select id="tourType" name="tourType">
+        <option>Heritage &amp; Culture</option>
+        <option>Adventure</option>
+        <option>Beach Holiday</option>
+        <option>Honeymoon</option>
+        <option>Family</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-amber search-btn"><i class="fa-solid fa-magnifying-glass"></i> Find my trip</button>
+  </form>
+</section>
+
+<main>
+
+<!-- ============ POPULAR DESTINATIONS ============ -->
+<section class="section" id="destinations">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow eyebrow-dark"><i class="fa-solid fa-map-location-dot"></i> Where to next</span>
+      <h2>Popular Destinations</h2>
+      <p class="section-sub">Explore the most loved destinations and discover unforgettable experiences.</p>
+    </div>
+
+    <div class="destination-grid reveal-group">
+      <article class="destination-card destination-card-top reveal">
+        <a class="destination-card-link" href="/destinations/agra" aria-label="Explore Agra destination tours">
+          <div class="destination-image">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal,_Agra,_India_edit3.jpg" alt="Taj Mahal in Agra reflected in the central pool" loading="lazy" decoding="async">
+            <span class="destination-badge"><i class="fa-solid fa-crown"></i> Top Destination</span>
+            <h3><i class="fa-solid fa-location-dot"></i> Agra</h3>
+          </div>
+          <div class="destination-content">
+            <p>Witness the Taj Mahal at sunrise and explore the grand stories of Mughal India.</p>
+            <div class="destination-meta"><span><i class="fa-regular fa-clock"></i> 3 Days / 2 Nights</span><span class="destination-rating"><i class="fa-solid fa-star"></i> 4.9 <small>(2,840 travelers)</small></span></div>
+            <div class="destination-footer"><span class="destination-price"><small>Starting from</small>₹4,999</span><span class="destination-button">Explore Destination <i class="fa-solid fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="destination-card reveal">
+        <a class="destination-card-link" href="/destinations/jaipur" aria-label="Explore Jaipur destination tours">
+          <div class="destination-image">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hawa_Mahal,_Jaipur,_Rajasthan.JPG" alt="Hawa Mahal palace facade in Jaipur, Rajasthan" loading="lazy" decoding="async">
+            <span class="destination-badge"><i class="fa-solid fa-fire"></i> Popular</span>
+            <h3><i class="fa-solid fa-location-dot"></i> Jaipur</h3>
+          </div>
+          <div class="destination-content">
+            <p>Discover royal forts, colorful bazaars and the timeless charm of the Pink City.</p>
+            <div class="destination-meta"><span><i class="fa-regular fa-clock"></i> 4 Days / 3 Nights</span><span class="destination-rating"><i class="fa-solid fa-star"></i> 4.8 <small>(2,315 travelers)</small></span></div>
+            <div class="destination-footer"><span class="destination-price"><small>Starting from</small>₹6,499</span><span class="destination-button">Explore Destination <i class="fa-solid fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="destination-card reveal">
+        <a class="destination-card-link" href="/destinations/delhi" aria-label="Explore Delhi destination tours">
+          <div class="destination-image">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/India_Gate_Sunset.jpg" alt="India Gate in New Delhi illuminated at sunset" loading="lazy" decoding="async">
+            <h3><i class="fa-solid fa-location-dot"></i> Delhi</h3>
+          </div>
+          <div class="destination-content">
+            <p>Walk through centuries of history, vibrant markets and India's energetic capital.</p>
+            <div class="destination-meta"><span><i class="fa-regular fa-clock"></i> 3 Days / 2 Nights</span><span class="destination-rating"><i class="fa-solid fa-star"></i> 4.7 <small>(1,970 travelers)</small></span></div>
+            <div class="destination-footer"><span class="destination-price"><small>Starting from</small>₹5,499</span><span class="destination-button">Explore Destination <i class="fa-solid fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="destination-card reveal">
+        <a class="destination-card-link" href="/destinations/goa" aria-label="Explore Goa destination tours">
+          <div class="destination-image">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Goa_beautiful_beach.JPG" alt="Palm-lined beach and blue sea in Goa" loading="lazy" decoding="async">
+            <span class="destination-badge"><i class="fa-solid fa-fire"></i> Popular</span>
+            <h3><i class="fa-solid fa-location-dot"></i> Goa</h3>
+          </div>
+          <div class="destination-content">
+            <p>Unwind on golden beaches and enjoy lively markets, music and coastal flavors.</p>
+            <div class="destination-meta"><span><i class="fa-regular fa-clock"></i> 4 Days / 3 Nights</span><span class="destination-rating"><i class="fa-solid fa-star"></i> 4.8 <small>(3,120 travelers)</small></span></div>
+            <div class="destination-footer"><span class="destination-price"><small>Starting from</small>₹7,999</span><span class="destination-button">Explore Destination <i class="fa-solid fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="destination-card reveal">
+        <a class="destination-card-link" href="/destinations/kashmir" aria-label="Explore Kashmir destination tours">
+          <div class="destination-image">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shikara_in_Dal_Lake_in_Kashmir.JPG" alt="Traditional shikara boat on Dal Lake in Kashmir" loading="lazy" decoding="async">
+            <span class="destination-badge"><i class="fa-solid fa-fire"></i> Popular</span>
+            <h3><i class="fa-solid fa-location-dot"></i> Kashmir</h3>
+          </div>
+          <div class="destination-content">
+            <p>Glide across Dal Lake and escape into valleys framed by Himalayan peaks.</p>
+            <div class="destination-meta"><span><i class="fa-regular fa-clock"></i> 6 Days / 5 Nights</span><span class="destination-rating"><i class="fa-solid fa-star"></i> 4.9 <small>(2,650 travelers)</small></span></div>
+            <div class="destination-footer"><span class="destination-price"><small>Starting from</small>₹12,999</span><span class="destination-button">Explore Destination <i class="fa-solid fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="destination-card reveal">
+        <a class="destination-card-link" href="/destinations/manali" aria-label="Explore Manali destination tours">
+          <div class="destination-image">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape_of_Manali,_India,_2016.jpg" alt="Snow-covered Himalayan mountains and green valley near Manali" loading="lazy" decoding="async">
+            <h3><i class="fa-solid fa-location-dot"></i> Manali</h3>
+          </div>
+          <div class="destination-content">
+            <p>Find mountain adventure among pine forests, snowy passes and riverside towns.</p>
+            <div class="destination-meta"><span><i class="fa-regular fa-clock"></i> 5 Days / 4 Nights</span><span class="destination-rating"><i class="fa-solid fa-star"></i> 4.8 <small>(2,190 travelers)</small></span></div>
+            <div class="destination-footer"><span class="destination-price"><small>Starting from</small>₹9,499</span><span class="destination-button">Explore Destination <i class="fa-solid fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <div class="destination-cta reveal">
+      <div class="destination-cta-icon" aria-hidden="true"><i class="fa-regular fa-map"></i></div>
+      <div class="destination-cta-copy">
+        <h3>Can't find your destination?</h3>
+        <p>Tell us where you want to go and we'll create a personalized travel plan for you.</p>
+      </div>
+      <a href="#contact" class="btn btn-amber">Plan My Trip <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<div class="horizon-divider" aria-hidden="true"><span></span></div>
+
+<!-- ============ TOUR PACKAGES ============ -->
+<section class="section section-navy" id="packages">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><i class="fa-solid fa-ticket"></i> Ready-made itineraries</span>
+      <h2>Trips travelers love</h2>
+      <p class="section-sub light">Every package is a starting point — we'll tailor the pace, the stays and the stops to you.</p>
+    </div>
+
+    <div class="grid grid-3 reveal-group">
+
+      <article class="pkg-card reveal">
+        <div class="pkg-img">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal_Front.JPG" alt="Golden Triangle Tour - Taj Mahal" loading="lazy">
+          <span class="pkg-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Golden Triangle Tour</h3>
+          <div class="pkg-meta">
+            <span><i class="fa-solid fa-clock"></i> 6 Days / 5 Nights</span>
+            <span><i class="fa-solid fa-location-dot"></i> Delhi · Agra · Jaipur</span>
+          </div>
+          <p>The classic first trip to India — three cities, three centuries of history.</p>
+          <div class="pkg-foot">
+            <span class="pkg-price">₹24,999<small>/person</small></span>
+            <div class="pkg-btns">
+              <a href="#contact" class="btn btn-ghost-navy sm">View Details</a>
+              <a href="#book" class="btn btn-amber sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="pkg-card reveal">
+        <div class="pkg-img">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal,_Agra,_India_edit3.jpg" alt="Agra Heritage Tour" loading="lazy">
+          <span class="pkg-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Agra Heritage Tour</h3>
+          <div class="pkg-meta">
+            <span><i class="fa-solid fa-clock"></i> 2 Days / 1 Night</span>
+            <span><i class="fa-solid fa-location-dot"></i> Agra</span>
+          </div>
+          <p>A focused weekend around the Taj Mahal, Agra Fort and Fatehpur Sikri.</p>
+          <div class="pkg-foot">
+            <span class="pkg-price">₹8,999<small>/person</small></span>
+            <div class="pkg-btns">
+              <a href="#contact" class="btn btn-ghost-navy sm">View Details</a>
+              <a href="#book" class="btn btn-amber sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="pkg-card reveal">
+        <div class="pkg-img">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hawa_Mahal,_Jaipur,_Rajasthan.JPG" alt="Rajasthan Tour" loading="lazy">
+          <span class="pkg-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Rajasthan Tour</h3>
+          <div class="pkg-meta">
+            <span><i class="fa-solid fa-clock"></i> 8 Days / 7 Nights</span>
+            <span><i class="fa-solid fa-location-dot"></i> Jaipur · Udaipur · Jodhpur</span>
+          </div>
+          <p>Forts, palaces and desert sunsets across the state that does royalty best.</p>
+          <div class="pkg-foot">
+            <span class="pkg-price">₹32,499<small>/person</small></span>
+            <div class="pkg-btns">
+              <a href="#contact" class="btn btn-ghost-navy sm">View Details</a>
+              <a href="#book" class="btn btn-amber sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="pkg-card reveal">
+        <div class="pkg-img">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shikara_in_Dal_Lake_in_Kashmir.JPG" alt="Kashmir Holiday Package" loading="lazy">
+          <span class="pkg-rating"><i class="fa-solid fa-star"></i> 5.0</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Kashmir Holiday Package</h3>
+          <div class="pkg-meta">
+            <span><i class="fa-solid fa-clock"></i> 6 Days / 5 Nights</span>
+            <span><i class="fa-solid fa-location-dot"></i> Srinagar · Gulmarg · Pahalgam</span>
+          </div>
+          <p>Wake up on a houseboat, ride a gondola over pine forests, breathe mountain air.</p>
+          <div class="pkg-foot">
+            <span class="pkg-price">₹28,999<small>/person</small></span>
+            <div class="pkg-btns">
+              <a href="#contact" class="btn btn-ghost-navy sm">View Details</a>
+              <a href="#book" class="btn btn-amber sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="pkg-card reveal">
+        <div class="pkg-img">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Goa_beautiful_beach.JPG" alt="Goa Beach Holiday" loading="lazy">
+          <span class="pkg-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Goa Beach Holiday</h3>
+          <div class="pkg-meta">
+            <span><i class="fa-solid fa-clock"></i> 4 Days / 3 Nights</span>
+            <span><i class="fa-solid fa-location-dot"></i> North &amp; South Goa</span>
+          </div>
+          <p>Beach hopping by day, night markets and live music by the sea after dark.</p>
+          <div class="pkg-foot">
+            <span class="pkg-price">₹15,999<small>/person</small></span>
+            <div class="pkg-btns">
+              <a href="#contact" class="btn btn-ghost-navy sm">View Details</a>
+              <a href="#book" class="btn btn-amber sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="pkg-card reveal">
+        <div class="pkg-img">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape_of_Manali,_India,_2016.jpg" alt="Himachal Adventure Tour" loading="lazy">
+          <span class="pkg-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Himachal Adventure Tour</h3>
+          <div class="pkg-meta">
+            <span><i class="fa-solid fa-clock"></i> 5 Days / 4 Nights</span>
+            <span><i class="fa-solid fa-location-dot"></i> Manali · Solang · Kasol</span>
+          </div>
+          <p>Paragliding, river crossings and campfire nights in the Kullu Valley.</p>
+          <div class="pkg-foot">
+            <span class="pkg-price">₹19,499<small>/person</small></span>
+            <div class="pkg-btns">
+              <a href="#contact" class="btn btn-ghost-navy sm">View Details</a>
+              <a href="#book" class="btn btn-amber sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow eyebrow-dark"><i class="fa-solid fa-compass"></i> Our promise</span>
+      <h2>Travel well, without the guesswork</h2>
+    </div>
+
+    <div class="grid grid-4 reveal-group">
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fa-solid fa-tags"></i></div>
+        <h3>Best Price Guarantee</h3>
+        <p>Direct partnerships with hotels and operators mean no hidden markups on your itinerary.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fa-solid fa-user-tie"></i></div>
+        <h3>Experienced Travel Experts</h3>
+        <p>Every trip is planned by someone who has actually walked that route before you.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+        <h3>24/7 Customer Support</h3>
+        <p>A real person answers, day or night, wherever your trip happens to take you.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fa-solid fa-map"></i></div>
+        <h3>Customized Travel Plans</h3>
+        <p>Every itinerary starts as a blank map — we build it around your pace, not a template.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT US ============ -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pangong_Tso_Lake_1.jpg" alt="Travelers overlooking a Himalayan lake" loading="lazy">
+      <div class="about-badge">
+        <strong>12+</strong>
+        <span>Years Planning Journeys</span>
+      </div>
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow eyebrow-dark"><i class="fa-solid fa-earth-asia"></i> About OpenHorizons</span>
+      <h2>We plan trips the way we'd want to travel ourselves</h2>
+      <p>OpenHorizons started with a simple frustration: most travel agencies sell the same fixed itinerary to everyone. We build ours around real conversations — what you want to see, how fast you want to move, and what "unforgettable" means to you.</p>
+      <p>From the ghats of Varanasi to the passes above Manali, our local partners handle the details so you can just show up and be present.</p>
+
+      <div class="stat-row">
+        <div class="stat"><strong>50,000+</strong><span>Happy Travelers</span></div>
+        <div class="stat"><strong>120+</strong><span>Destinations</span></div>
+        <div class="stat"><strong>300+</strong><span>Tour Packages</span></div>
+      </div>
+
+      <a href="#contact" class="btn btn-navy">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<div class="horizon-divider" aria-hidden="true"><span></span></div>
+
+<!-- ============ SERVICES ============ -->
+<section class="section section-tint" id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow eyebrow-dark"><i class="fa-solid fa-suitcase-rolling"></i> What we handle</span>
+      <h2>Everything your trip needs</h2>
+      <p class="section-sub">Book one thing or let us run the whole trip — either way, it's covered.</p>
+    </div>
+
+    <div class="grid grid-4 reveal-group">
+      <div class="service-card reveal"><i class="fa-solid fa-map-location-dot"></i><h3>Tour Packages</h3><p>Curated multi-day itineraries, ready to book or fully customized.</p></div>
+      <div class="service-card reveal"><i class="fa-solid fa-hotel"></i><h3>Hotel Booking</h3><p>Vetted stays, from heritage havelis to beachfront resorts.</p></div>
+      <div class="service-card reveal"><i class="fa-solid fa-plane"></i><h3>Flight Booking</h3><p>Best-fare domestic and international flights, handled end to end.</p></div>
+      <div class="service-card reveal"><i class="fa-solid fa-shuttle-van"></i><h3>Airport Transfer</h3><p>A driver waiting at arrivals, every time, no surge pricing.</p></div>
+      <div class="service-card reveal"><i class="fa-solid fa-car-side"></i><h3>Car Rental</h3><p>Self-drive or chauffeured, for the trips that need their own pace.</p></div>
+      <div class="service-card reveal"><i class="fa-solid fa-route"></i><h3>Customized Tours</h3><p>Tell us the shape of your trip — we'll fill in the rest.</p></div>
+      <div class="service-card reveal"><i class="fa-solid fa-clipboard-list"></i><h3>Travel Planning</h3><p>Visas, insurance and packing logistics, sorted before you leave.</p></div>
+      <div class="service-card reveal"><i class="fa-solid fa-briefcase"></i><h3>Corporate Travel</h3><p>Offsites and incentive trips planned around your team, not a brochure.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section section-navy" id="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><i class="fa-solid fa-quote-left"></i> From our travelers</span>
+      <h2>Stories from the road</h2>
+    </div>
+
+    <div class="testimonial-track" id="testimonialTrack">
+      <div class="testimonial-card">
+        <div class="t-top">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Portrait of Ananya Rao" loading="lazy">
+          <div>
+            <h4>Ananya Rao</h4>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+        </div>
+        <p>"Our Kashmir trip was planned down to the last houseboat sunset. Nothing felt rushed, nothing felt generic."</p>
+        <span class="t-dest"><i class="fa-solid fa-location-dot"></i> Kashmir</span>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="t-top">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Portrait of Rohan Mehta" loading="lazy">
+          <div>
+            <h4>Rohan Mehta</h4>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+          </div>
+        </div>
+        <p>"The Golden Triangle tour guide knew stories about Agra Fort that weren't on any plaque. Worth every rupee."</p>
+        <span class="t-dest"><i class="fa-solid fa-location-dot"></i> Golden Triangle</span>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="t-top">
+          <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Portrait of Priya Nair" loading="lazy">
+          <div>
+            <h4>Priya Nair</h4>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+        </div>
+        <p>"Booked Goa four days before travel. They still found us a beachfront stay and a driver. Genuinely 24/7 support."</p>
+        <span class="t-dest"><i class="fa-solid fa-location-dot"></i> Goa</span>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="t-top">
+          <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Portrait of Karan Singh" loading="lazy">
+          <div>
+            <h4>Karan Singh</h4>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+        </div>
+        <p>"Manali in winter, exactly the itinerary I asked for. They swapped two stops when weather changed, no extra charge."</p>
+        <span class="t-dest"><i class="fa-solid fa-location-dot"></i> Manali</span>
+      </div>
+    </div>
+
+    <div class="testimonial-dots" id="testimonialDots"></div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="cta-media" aria-hidden="true">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shikara_in_Dal_Lake_in_Kashmir.JPG" alt="" loading="lazy">
+  </div>
+  <div class="cta-inner">
+    <span class="eyebrow"><i class="fa-solid fa-sparkles"></i> Made for you</span>
+    <h2>Your best trip will not come from a template.</h2>
+    <p>Share what you love, how you travel and when you want to go. We will shape the rest.</p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn btn-amber">Start planning <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <span class="eyebrow eyebrow-dark"><i class="fa-solid fa-paper-plane"></i> Let's talk</span>
+      <h2>Plan Your Trip</h2>
+      <p class="section-sub">Send us the shape of your trip and a travel expert will reply within one business day.</p>
+
+      <ul class="info-list">
+        <li><i class="fa-solid fa-phone"></i><div><strong>Phone</strong><span>+91 98765 43210</span></div></li>
+        <li><i class="fa-solid fa-envelope"></i><div><strong>Email</strong><span>hello@openhorizons.travel</span></div></li>
+        <li><i class="fa-solid fa-location-dot"></i><div><strong>Office</strong><span>4th Floor, Horizon Tower, Connaught Place, New Delhi 110001</span></div></li>
+        <li><i class="fa-solid fa-clock"></i><div><strong>Business Hours</strong><span>Mon – Sat, 9:00 AM – 8:00 PM IST</span></div></li>
+      </ul>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required>
+          <span class="error-msg">Please enter your name.</span>
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error-msg">Please enter a valid email.</span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+          <span class="error-msg">Please enter your phone number.</span>
+        </div>
+        <div class="form-field">
+          <label for="destinationField">Destination</label>
+          <input type="text" id="destinationField" name="destinationField" placeholder="e.g. Kashmir">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="travelDateField">Travel Date</label>
+          <input type="date" id="travelDateField" name="travelDateField">
+        </div>
+        <div class="form-field">
+          <label for="travelersField">Number of Travelers</label>
+          <input type="number" id="travelersField" name="travelersField" min="1" value="2">
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us what kind of trip you're picturing..." required></textarea>
+        <span class="error-msg">Please add a short message.</span>
+      </div>
+      <button type="submit" class="btn btn-amber form-submit" id="book">Submit Inquiry <i class="fa-solid fa-arrow-right"></i></button>
+      <p class="form-success" id="formSuccess"><i class="fa-solid fa-circle-check"></i> Thanks — your inquiry has been sent. We'll be in touch shortly.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-top container">
+    <div class="footer-col footer-brand">
+      <a href="#home" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="30" height="30">
+            <circle cx="20" cy="16" r="9" fill="var(--amber)"/>
+            <path d="M2 26 Q20 14 38 26" stroke="var(--paper)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">Open<em>Horizons</em></span>
+      </a>
+      <p>Custom-built journeys across India — heritage cities, Himalayan trails and everything in between.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#packages">Tour Packages</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Popular Destinations</h4>
+      <a href="#destinations">Agra</a>
+      <a href="#destinations">Jaipur</a>
+      <a href="#destinations">Goa</a>
+      <a href="#destinations">Manali</a>
+      <a href="#destinations">Kashmir</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Hotel Booking</a>
+      <a href="#services">Flight Booking</a>
+      <a href="#services">Car Rental</a>
+      <a href="#services">Customized Tours</a>
+      <a href="#services">Corporate Travel</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <span><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+      <span><i class="fa-solid fa-envelope"></i> hello@openhorizons.travel</span>
+      <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> OpenHorizons Travel Pvt. Ltd. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms &amp; Conditions</a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
