@@ -413,6 +413,7 @@ section{ position: relative; }
   .grid-4{ grid-template-columns: repeat(2, 1fr); }
   .testimonial-track{ grid-template-columns: repeat(2, 1fr); }
   .feature-card:nth-child(3){ border-left:0; }
+  .search-box{display: none;}
 }
 
 @media (max-width: 1024px){
@@ -422,6 +423,7 @@ section{ position: relative; }
   .about-media img{ height: 360px; }
   .contact-grid{ grid-template-columns: 1fr; }
   .footer-top{ grid-template-columns: 1fr 1fr 1fr; }
+  .search-box{display: none;}
 }
 
 @media (max-width: 860px){
@@ -444,6 +446,7 @@ section{ position: relative; }
   .search-btn{ grid-column:1 / -1; }
   #destinations{ padding-top:90px; }
   .horizon-line{ display:none; }
+  .search-box{display: none;}
 }
 
 @media (max-width: 720px){
@@ -467,6 +470,7 @@ section{ position: relative; }
   .footer-top{ grid-template-columns: 1fr 1fr; }
   .form-row{ grid-template-columns: 1fr; }
   .about-badge{ left: 12px; bottom: -20px; padding: 14px 18px; }
+  .search-box{display: none;}
 }
 
 @media (max-width: 480px){
@@ -492,4 +496,5 @@ section{ position: relative; }
   .destination-content > p{ min-height:0; }
   .destination-cta{ grid-template-columns:1fr; text-align:center; }
   .destination-cta-icon{ margin:0 auto; }
+  .search-box{display: none;}
 }
